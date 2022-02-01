@@ -7,6 +7,7 @@ const client = new Client({
 
 client.once('ready', ()=>{
     console.log("Ready");
+    client.user.setActivity('Jarvis', {type:'LISTENING'});
 });
 
 client.login(_TOKEN);
